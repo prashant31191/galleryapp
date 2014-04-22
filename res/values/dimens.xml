@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="status_bar_height">30dp</dimen>
+    <dimen name="button_font_size">15sp</dimen>
+    <dimen name="nav_text_font_size">18sp</dimen>
+    <dimen name="gallery_item_title_size">12dip</dimen>
+    
+    <dimen name="paginator_button_text_size">18dip</dimen>
+    <dimen name="paginator_button_height">36dip</dimen>
+    <dimen name="galerry_loading_size">32dip</dimen>
+</resources>

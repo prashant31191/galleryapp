@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gallery_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <com.astuetz.PagerSlidingTabStrip
+	    android:id="@+id/gallery_tabs"
+	    android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+	    android:layout_width="match_parent"
+	    android:background="@color/gallery_tab_background"
+	    android:textColor="@color/gallery_tab_divider"
+        myapp:pstsTabPaddingLeftRight="10dip"
+	    myapp:pstsIndicatorColor="@color/gallery_tab_indicator"
+	    myapp:pstsDividerColor="@color/gallery_tab_divider"
+	    myapp:pstsUnderlineColor="@color/gallery_tab_indicator"
+	    android:layout_height="45dip" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/gallery_viewPager"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/gallery_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        myapp:adSize="SMART_BANNER"
+        myapp:adUnitId="@string/ad_unit_id"
+        android:background="@android:color/black" />
+
+</RelativeLayout>
